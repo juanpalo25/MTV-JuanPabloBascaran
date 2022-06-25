@@ -9,9 +9,9 @@ def una_vista(request):
 
 def mi_template(request):
     template = loader.get_template('index.html')
-    prueba1= """ACA IRIA EL NOMBRE DE LA CLASE, QUE NO LO RECONOCE"""(nombre='Laura')
-    prueba2= """ACA IRIA EL NOMBRE DE LA CLASE, QUE NO LO RECONOCE"""(nombre='Florencia')
-    prueba3= """ACA IRIA EL NOMBRE DE LA CLASE, QUE NO LO RECONOCE"""(nombre='Gaston')
+    prueba1= Familia(nombre='Laura')
+    prueba2= Familia(nombre='Florencia')
+    prueba3= Familia(nombre='Gaston')
     
-    render = template.render({'lista de objetos': [prueba1, prueba2, prueba3] })
+    render = template.render({'lista_objetos': [prueba1, prueba2, prueba3] })
     return HttpResponse(render)
