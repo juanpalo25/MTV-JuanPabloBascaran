@@ -9,9 +9,9 @@
   <body>    
     <h1>Este es mi Template</h1>
     <p>
-        <ul>
-            {%for objeto in lista_objetos%}
-            <li>{{objeto.nombre}}</li>
+        <ul> Familiar 1
+            {%for familiar in lista_familiares%}
+            <li> Nombre:{{familiar.nombre}} - Edad:{{familiar.anios}} </li>
             {%endfor%}
         </ul>
     </p>
