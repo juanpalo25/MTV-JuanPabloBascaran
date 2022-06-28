@@ -1,5 +1,7 @@
-if [ $VIRTUAL_ENVIROMENT ]
-then
-    desactivate
+#!/usr/bin/env bash
+
+if [ $VIRTUAL_ENVIRONMENT ]
+then 
+    deactivate
 fi
-    . venv/Scripts/activate
+. venv/Scripts/activate
