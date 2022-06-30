@@ -1,13 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vista nueva</title>
-</head>
-<body>
-    <h1>Soy una nueva vista</h1>
-    
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+{% block titulo %}nueva vista creada{% endblock titulo %}
+
+
+{% block texto_h1 %}Bienvenidos a la nueva vista{% endblock texto_h1 %}
+{% block contenido_diferente %}
+<h2>Subtitulo</h2>
+<ul>
+    <li>hola</li>
+    <li>buenas</li>
+    <li>chau</li>
+</ul>
+
+
+
+{% endblock contenido_diferente %}
